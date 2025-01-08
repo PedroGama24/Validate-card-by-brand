@@ -1,0 +1,40 @@
+# Validação de Cartão de Crédito
+
+Esta aplicação valida números de cartões de crédito e identifica a bandeira do cartão (Visa, MasterCard, etc.).
+
+
+## Instalação
+
+1. Clone o repositório:
+    ```sh
+    git clone https://github.com/seu-usuario/seu-repositorio.git
+    ```
+2. Navegue até o diretório do projeto:
+    ```sh
+    cd seu-repositorio
+    ```
+3. Instale as dependências:
+    ```sh
+    npm install
+    ```
+
+## Uso
+
+1. Edite o arquivo [index.js]e substitua o valor de [cardNumber]com o número do cartão que você deseja validar.
+2. Execute a aplicação:
+    ```sh
+    node src/index.js
+    ```
+
+## Exemplo
+
+```js
+const cardNumber = '5319 8148 9129 3648'; // Substitua pelo número do cartão
+const cardType = validateCreditCard(cardNumber);
+
+if (cardType) {
+    console.log(`Card type: ${cardType}`);
+} else {
+    console.log('Invalid card number');
+}
+
